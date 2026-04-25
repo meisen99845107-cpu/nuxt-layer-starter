@@ -1,0 +1,55 @@
+// 应用相关
+$app-body-bj: #293548;
+$app-container-bj: #151D29;
+
+
+
+$app-sub-color: #ec64e5; // 次要色
+$bg-main-color: #f7f7f7; // 页面主背景色
+$bg-navbar-color: #121922; // navbar背景色
+$bg-tabbar-color: #121922; // tabbar背景色-移动端底部菜单
+$active-tabbar-color: #1348C1; // tabbar背景色-移动端底部菜单
+$tabbar-color: #727F94; // tabbar背景色-移动端底部菜单
+
+// 默认字体样式
+$font-color-default: white;
+$font-family-default: 'PingFang SC';
+
+// Font（rem 基于 html font-size）
+$font-size-8: 0.5rem;
+$font-size-10: 0.625rem;
+$font-size-12: 0.75rem;
+$font-size-14: 0.875rem;
+$font-size-16: 1rem;
+$font-size-18: 1.125rem;
+$font-size-20: 1.25rem;
+$font-size-22: 1.375rem;
+$font-size-24: 1.5rem;
+$font-size-26: 1.625rem;
+
+// Padding
+$padding-unit: 0.25rem; // 4px
+$padding-4: $padding-unit * 1;
+$padding-8: $padding-unit * 2;
+$padding-12: $padding-unit * 3;
+$padding-16: $padding-unit * 4;
+$padding-24: $padding-unit * 6;
+$padding-32: $padding-unit * 8;
+
+// Border
+$border-unit: 1px;
+$border-2: $border-unit * 2;
+$border-5: $border-unit * 5;
+$border-8: $border-unit * 8;
+$border-12: $border-unit * 12;
+
+// 灰阶
+$color-gray-1: #f7f8fa;
+$color-gray-2: #f2f3f5;
+$color-gray-3: #ebedf0;
+$color-gray-4: #dcdee0;
+$color-gray-5: #c8c9cc;
+$color-gray-6: #aaaaaa;
+$color-gray-7: #666666;
+$color-gray-8: #323233;
+$color-gray-9: #1c1c1c;

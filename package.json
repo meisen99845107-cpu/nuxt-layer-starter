@@ -1,0 +1,57 @@
+{
+  "name": "nuxt-layer-starter",
+  "description": "Reusable Nuxt 4 Layer starter for Vue/Nuxt applications.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "build:dev": "nuxt build --dotenv .env.dev",
+    "build:test": "nuxt build --dotenv .env.test",
+    "build:prod": "nuxt build --dotenv .env.prod",
+    "dev": "nuxt dev",
+    "dev:cert": "bash scripts/generate-dev-cert.sh",
+    "generate": "nuxt generate",
+    "init:template": "node scripts/init-template.mjs",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meisen99845107-cpu/nuxt-layer-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meisen99845107-cpu/nuxt-layer-starter/issues"
+  },
+  "homepage": "https://github.com/meisen99845107-cpu/nuxt-layer-starter#readme",
+  "dependencies": {
+    "@element-plus/icons-vue": ">=0.2.6",
+    "@element-plus/nuxt": "1.1.4",
+    "@fingerprintjs/fingerprintjs": "^5.0.0",
+    "@nuxt/image": "1.10.0",
+    "@nuxtjs/i18n": "10.0.3",
+    "@pinia/nuxt": "0.11.2",
+    "@popperjs/core": "2.11.8",
+    "crypto-js": "^4.2.0",
+    "element-plus": ">=2",
+    "javascript-obfuscator": "^4.1.1",
+    "mitt": "^3.0.1",
+    "nuxt": "^4.0.3",
+    "nuxt-swiper": "2.0.1",
+    "ofetch": "^1.4.1",
+    "pako": "^2.1.0",
+    "pinia": "^3.0.3",
+    "rollup-plugin-visualizer": "^6.0.3",
+    "sass": "^1.97.2",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "unplugin-vue-components": "^31.0.0",
+    "vant": "^4.9.22",
+    "vue": "^3.5.18",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/pako": "^2.0.3"
+  },
+  "packageManager": "yarn@1.22.22"
+}

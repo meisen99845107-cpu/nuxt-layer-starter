@@ -1,0 +1,8 @@
+{
+  "name": "Nuxt Layer Starter",
+  "short_name": "Nuxt Layer",
+  "display": "standalone",
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
+}

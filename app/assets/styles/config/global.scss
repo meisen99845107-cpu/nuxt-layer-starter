@@ -1,0 +1,75 @@
+// 样式变量
+@use './variable.scss' as *;
+
+// 全局默认样式
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+html {
+  // font-family: $font-family-default; // 默认字体 //一般不引入,太大了
+  font-size: 16px;
+  color: $font-color-default;
+
+  // H5: 375 基准（iPhone 6/7/8/X）
+  @media (max-width: 414px) {
+    font-size: calc(100vw / 375 * 16);
+  }
+
+  // H5: 700 基准（设计稿是 2x 图）
+  // 布局壳 max-w-[700px] 居中时，PC 视口远大于 700，若仍用默认 16px 根字号会导致 rem 整体偏小。
+  // 用 min(100vw, 700px) 让宽屏与「窗口宽度 700px」时的字号一致。
+  @media (min-width: 415px) {
+    font-size: calc(min(100vw, 700px) / 700 * 32);
+  }
+
+  background-color: $app-body-bj;
+}
+
+/**
+ * Teleport 挂点：在 #layout-root 内、main 外；footer 之后。
+ * 用 absolute 脱离 flex，避免 flex:0+height:0 在部分环境下导致传送内容不绘制。
+ * #layout-root 需有 transform（已有）以形成定位/包含块。
+ */
+.layout-fixed-overlays {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 10050;
+}
+
+.layout-fixed-overlays > * {
+  pointer-events: auto;
+}
+
+/* 全局：隐藏滚动条但保留滚动（供 teleport 内容、弹窗等使用） */
+.no-scrollbar {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+}
+
+/* Vant Popup 根节点自带 overflow-y:auto，滚动条出现在 .van-popup 上，此处统一隐藏 */
+.van-popup {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+}

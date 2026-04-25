@@ -1,0 +1,10 @@
+/* Tailwind CSS v4 (Vite plugin mode)
+   - 不建议放在 .scss 里，否则 sass 会把 @import 当成 sass import 去解析而报错
+   - @source 用于告诉 Tailwind 扫描哪些模板文件以生成类名（相当于 v3 的 content 配置）
+*/
+
+@import "tailwindcss";
+
+/* 扫描 app 目录下的 Vue/TS/JS 文件（你这个项目的页面与组件都在 app/ 下） */
+@source "../../**/*.{vue,js,ts,jsx,tsx}";
+
