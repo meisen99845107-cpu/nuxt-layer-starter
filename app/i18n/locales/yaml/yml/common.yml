@@ -1,0 +1,32 @@
+# Base i18n examples. Use Chinese copy as keys for direct `t('确定')` usage.
+确定:
+  zh-cn: 确定
+  en: OK
+
+取消:
+  zh-cn: 取消
+  en: Cancel
+
+保存:
+  zh-cn: 保存
+  en: Save
+
+删除:
+  zh-cn: 删除
+  en: Delete
+
+提交:
+  zh-cn: 提交
+  en: Submit
+
+加载中...:
+  zh-cn: 加载中...
+  en: Loading...
+
+请求失败:
+  zh-cn: 请求失败
+  en: Request failed
+
+登录已过期，请重新登录:
+  zh-cn: 登录已过期，请重新登录
+  en: Session expired. Please sign in again.

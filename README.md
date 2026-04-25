@@ -41,6 +41,7 @@ The layer should contain only shared infrastructure. Business projects should ke
 - Nuxt 4 base config, Vite config, Nitro API proxy, dev server HTTPS support.
 - Tailwind v4, Sass global variables, reset/global/font styles.
 - Vant auto import, Element Plus, Pinia, i18n, Nuxt Image, Swiper.
+- YAML-driven i18n generation with Chinese copy as translation keys.
 - Generic auth/session store.
 - `ofetch` request wrapper with base URL, token header, full response mode, encryption support.
 - Cache utilities, browser fingerprint header, event bus, websocket plugin.
@@ -80,6 +81,30 @@ Build enhancement switches:
 - `VITE_BUILD_OBFUSCATE=true`
 
 Both are disabled by default.
+
+## I18n YAML
+
+Locale JSON files can be generated from YAML files:
+
+```bash
+yarn i18n:generate
+```
+
+Put shared translation source files in `app/i18n/locales/yaml/yml/*.yml`.
+The default format uses Chinese copy as keys:
+
+```yaml
+确定:
+  zh-cn: 确定
+  en: OK
+```
+
+Then use it in components:
+
+```ts
+const { t } = useI18n()
+t('确定')
+```
 
 ## Template Initialization
 

@@ -54,6 +54,7 @@ Keep this layer focused on shared infrastructure:
 - Tailwind, Sass, reset, global, and font styles
 - Pinia auth/session store
 - i18n base configuration
+- YAML-driven i18n generation with Chinese copy as keys
 - request utilities
 - request encryption utilities
 - browser cache, fingerprint, event bus, and websocket utilities

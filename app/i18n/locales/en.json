@@ -1,6 +1,10 @@
 {
-  "common": {
-    "ok": "OK",
-    "cancel": "Cancel"
-  }
+  "确定": "OK",
+  "取消": "Cancel",
+  "保存": "Save",
+  "删除": "Delete",
+  "提交": "Submit",
+  "加载中...": "Loading...",
+  "请求失败": "Request failed",
+  "登录已过期，请重新登录": "Session expired. Please sign in again."
 }

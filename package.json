@@ -11,6 +11,7 @@
     "dev": "nuxt dev",
     "dev:cert": "bash scripts/generate-dev-cert.sh",
     "generate": "nuxt generate",
+    "i18n:generate": "node app/i18n/locales/yaml/gen-langs.mjs",
     "init:template": "node scripts/init-template.mjs",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"

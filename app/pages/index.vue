@@ -45,7 +45,7 @@ const directories: NamedItem[] = [
   { name: 'app/store', description: 'Pinia 基础状态，当前包含通用 token/session。' },
   { name: 'app/middleware', description: '通用路由中间件，支持通过环境变量配置受保护路径。' },
   { name: 'app/assets/styles', description: 'Tailwind、SCSS 变量、reset、global 等样式基线。' },
-  { name: 'app/i18n/locales', description: '基础多语言文件，业务项目可以覆盖。' },
+  { name: 'app/i18n/locales', description: '基础多语言文件，支持 YAML 生成中文 key 的 JSON。' },
   { name: 'app/api', description: '底座只保留示例 API 约定，业务接口应放在业务项目中。' },
   { name: 'scripts', description: '开发辅助脚本，例如本地 HTTPS 证书生成。' },
 ]
@@ -57,7 +57,7 @@ const capabilities: NamedItem[] = [
   { name: 'CacheUtil', description: '统一 localStorage、sessionStorage、cookie 的读写封装。' },
   { name: '$ws', description: 'Nuxt 注入的 WebSocket 客户端入口。' },
   { name: '$bus', description: '基于 mitt 的跨组件事件总线。' },
-  { name: 'i18n', description: '提供 Nuxt i18n 基础配置和语言文件目录约定。' },
+  { name: 'i18n', description: '提供 Nuxt i18n 基础配置、语言目录约定和 YAML 中文 key 生成能力。' },
   { name: '样式基线和组件库', description: '内置 Tailwind、SCSS、Vant、Element Plus 的基础集成。' },
 ]
 
